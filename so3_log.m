@@ -2,7 +2,7 @@ function f = so3_log(R, varargin)
 
 if (nargin>1)
   if (norm(R-eye(3),'fro') < 2*eps)
-    f = zeros(3);
+    f = zeros(3,1);
     return
   end
 end
@@ -11,7 +11,7 @@ phi = acos(1/2*(trace(R)-1));
 
 if (nargin>1)
   if (abs(phi) < 1e-10)
-    f = zeros(3);
+    f = zeros(3,1);
     return
   end
 end
