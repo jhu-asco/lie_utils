@@ -3,7 +3,7 @@ a = sqrt(u'*u);
 
 if (a == sym('0') || (isnumeric(u(1)) && a < eps))
 %if (a < 2*eps)
-  f = ones(3);
+  f = eye(3);
   return
 end
 
